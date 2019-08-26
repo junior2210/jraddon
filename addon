@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standaljr="yes"?>
+<addon id="plugin.video.jrtv"
+       name="[COLOR aquamarine][B]jr[/COLOR][COLOR white]tv[/B][/COLOR]"
+       version="2.8.2"
+       provider-name="Equipe jrtv">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson" /> 
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.livestreamer" optional="true"/>
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="basedem.py">
+    <provides>video</provides>
+  </extension>
+    <extension point="xbmc.addon.repository" name="[B][COLOR white]Repositorio[/COLOR]: [COLOR aquamarine]jrtv[/COLOR][/B]">
+	<info compressed="false">http://raw.githubusercontent.com/jrtvHD/jrRepo/master/addons.xml</info>
+	<checksum>http://raw.githubusercontent.com/jrtvHD/jrRepo/master/addons.xml.md5</checksum>
+	<datadir zip="true">http://raw.githubusercontent.com/jrtvHD/jrRepo/master/ZipFiles/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR aquamarine]jrtv[/COLOR] É Apenas um 'AGREGADOR' de links, Apenas agrega e organiza os links externos. Não somos responsáveis pelos arquivos aqui encontrados.</summary>
+    <description lang="en">[B][COLOR white]TV, Filmes, Series, Desenhos, Animes, Novelas e Muito Mais.[/COLOR][/B]</description>
+    <platform>all</platform>
+	<assets>
+<icon>icon.png</icon>
+<fanart>fanart.jpg</fanart>
+<screenshot>resources/screenshots/1.png</screenshot>
+<screenshot>resources/screenshots/2.png</screenshot>
+<screenshot>resources/screenshots/3.png</screenshot>
+</assets>
+  </extension>
+</addon>
